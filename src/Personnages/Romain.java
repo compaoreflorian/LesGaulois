@@ -20,11 +20,10 @@ public class Romain {
 	
 	public void recevoirCoup(int forceCoup) {
 	 force= force - forceCoup;
-		if (force < 0) {
+		if (force < 1) {
 			force = 0;
-		}
-		if(force<1) {
 			System.out.println("j'abandonne");
+		
 		}
 		else {	System.out.println("Aie");
 		}
