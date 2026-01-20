@@ -1,7 +1,5 @@
 package Personnages;
 
-import LesGaulois.Gaulois;
-
 public class TestPersonnages {
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Axtérix",8);

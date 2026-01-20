@@ -1,17 +1,15 @@
 package Test_fonctionnel;
 
-import LesGaulois.Gaulois;
-import Personnages.Romain;
+import Personnages.*;
 
 public class TestGaulois {
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois("Axtérix",8);
-		System.out.println(asterix.getnom());
+		Gaulois asterix = new Gaulois("Axtérix", 8);
 		asterix.parler("Bonjour à tous");
-		Romain minus = new Romain("minus",6);
-		for(int i=0;i<3;i++) {
-			//minus.recevoirCoup(3);
-			asterix.frapper(minus);
+		Romain minus = new Romain("minus", 6);
+		minus.parler("UN GAU... UN GAUGAU...");
+		for (int i = 0; i < 3; i++) {
+			minus.frapper(asterix);
 		}
 	}
 
