@@ -1,6 +1,6 @@
-package Test_fonctionnel;
+package test_fonctionnel;
 
-import Personnages.*;
+import personnages.*;
 
 public class TestGaulois {
 	public static void main(String[] args) {
