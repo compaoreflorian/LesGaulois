@@ -13,6 +13,10 @@ public abstract class Personnage {
 	public String getnom() {
 		return nom;
 	}
+	
+	public int getforce(){
+		return force;
+	}
 
 	public void parler(String texte) {
 		System.out.println("Le " + donnerAuteur() + this.getnom() + ": << " + texte + " >>.");
@@ -30,9 +34,13 @@ public abstract class Personnage {
 	}
 
 	public void frapper(Personnage personnage) {
-		System.out.println(donnerAuteur() + nom + " envoie un grand coup dans la mâchoire au " + donnerAuteur()
-				+ personnage.getnom());
-		personnage.recevoirCoup(force / 3);
+		if (personnage.force < 1){
+			System.out.println("Le" + personnage.donnerAuteur() + personnage.getnom + "est déja a terre".)
+		}
+		else{
+			System.out.println(donnerAuteur() + nom + " envoie un grand coup dans la mâchoire au " + donnerAuteur() + personnage.getnom());
+		     personnage.recevoirCoup(force);
+		}
 	}
 
 	protected abstract String donnerAuteur();
