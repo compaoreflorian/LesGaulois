@@ -20,7 +20,7 @@ public class Village {
 		if (nb_gaulois < 4) {
 			villagois[nb_gaulois] = villagoi;
 			chef.parler("Bienvenue " + villagoi.getnom() + " !");
-			nb_gaulois += 1;
+			nb_gaulois ++;
 		}
 
 		else {
@@ -34,10 +34,10 @@ public class Village {
 			System.out.println(villagois[i].getnom());
 		}
 	}
-	
+
 	public void changerChef(Gaulois gauloi) {
 		chef.parler("Je laisse mon grand bouclier au grand " + gauloi.getnom());
 		gauloi.parler("merci ! ");
-		this.chef=gauloi;
+		this.chef = gauloi;
 	}
 }

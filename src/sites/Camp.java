@@ -20,7 +20,7 @@ public class Camp {
 		if (nb_soldats < 80) {
 			soldats[nb_soldats] = soldat;
 			soldat.parler("je met mon épée au service de Rome dans le camp dirigé par " + commandant.getnom());
-			nb_soldats += 1;
+			nb_soldats ++;
 		}
 
 		else {
